@@ -1,59 +1,133 @@
-* {
-    padding: 0px;
-    margin: 0px;
+body {
+    margin: 0;
+    backgorund: #e0e1dd;
+    font-family: "Poppins", 'Helvetica', 'Arial', sans-serif;
   }
   
-  .header {
-      background: #1b263b;
-      color: #e0e1dd;
+  #top-content {
+    background: #1b263b;
+    color: #e0e1dd;
+    height: 400px;
   }
-  
-  .header-topline {
+  #header_line{
+    margin-left: 100px;
     display: flex;
-    padding-top: 10px;
   }
-  
-  .logo {
-    width: 100px;
-    padding-left: 15px;
-    font-size: 30px;
+  #logo{
+    font-size: 20px;
   }
-  
-  #logo-h1 {
-    height: 10px;
-  }
-  
-  .header-links {
+  #header-links{
     display: flex;
-    padding-top: 5px;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 100px;
+    margin-top: 10px;
+    font-size: 15px;
   }
   .header-link {
-    padding-right: 10px;
+    padding-left: 15px;
   }
-
-  .splash {
-    padding-top: 20px;
-    
+  #header-content{
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-right: 100px;
+    display: flex;
+  }
+  #header-h1{
+    margin-bottom: 0;
+  }
+  #header-text{
+    width: 400px;
+    font-size: 15px;
+  }
+  #top-sign-up{
+    background-color: #00b4d8; 
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  #header-image{
+    margin-left: auto;
+    background: grey;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
   }
   
-  
-  
-  .information-images {
-      background: white;
-      color: #343a40;
+  #header-image-placeholder-text{
+    padding-top: 75px;
   }
   
-  
-  .testimonials {
-      background: #778da9;
-      color: #e9ecef;
+  #center-content{
+    text-align: center;
   }
   
-  .call-to-action {
-      background: #415a77;
-      color: #e0e1dd;
+  #center-image-content{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
   }
   
+  .center-image{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #00b4d8;
+  }
   
+  .center-image-text{
+    position: relative;
+    top: 110px;
+  }
+  
+  #testimonials{
+    background: #e0e1dd;
+    justify-content: center;
+    height: 250px;
+  }
+  
+  #testimonial-text{
+    padding: 50px 300px 0px;
+    font-size: 23px;
+    font-style: italic;
+  }
+  #testimonial-source{
+    text-align: right;
+    padding-right: 300px;
+  }
+  
+  #call-to-action{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #cta-box{
+    padding: 25px;
+    background-color: #00b4d8;
+    width: 60%;
+    display: flex;
+  }
+  
+  #cta-h1{
+    padding: 0;
+    margin: 0;
+  }
+  #cta-text{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #cta-sign-up{
+    background-color: #00b4d8; 
+    border: solid white;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    marign-left: auto;
+    margin-right: 0;
+  }
