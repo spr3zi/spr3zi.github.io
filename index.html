@@ -1,43 +1,169 @@
 <html lang="en" data-bs-theme="dark">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <section class="container row" id="top-line">
-        <div class="col-md-4 p-md-2 mb-4 mt-1 rounded" id="weather-box">
-            <p id="clock"></p>
-            <p>48°F/9°C</p>
-            <p>Cloudy</p>
-        </div>
-        <div class="col-md-8 p-md-2 mb-4 mt-1 rounded text-body-emphasis bg-body-secondary container" id="quote-box">
-            <div class="row row-cols text-end"  style="height: 120px;">
-                <blockquote class="blockquote">
-                    <p id="quoteText"></p>
-                    <footer class="blockquote-footer" id="quoteSource"></footer>
-                  </blockquote>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid p-4">
+        <div class="row">
+            <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary rounded">
+                <div class="flex-shrink-0 p-3" style="width: 280px;">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+                        <svg class="bi pe-none me-2" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                        <span class="fs-5 fw-semibold">Vinmeister</span>
+                    </a>
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                                VinNet
+                            </button>
+                            <div class="collapse" id="home-collapse" style>
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Homepage</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Portainer</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Wiki</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Linode</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">Entertainment
+                            </button>
+                            <div class="collapse" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">YouTube</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reddit</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">HackerNews</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Facebook</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Dev
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Github</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">CodePen</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Account
+                            </button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign
+                                            out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="row align-items-end">
-                <small class="d-block text-end mt-3">
-                        <button class="btn btn-secondary rounded-circle p-2 lh-1" type="button" id="edit-quote-button" onclick="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><title>Edit Quote</title><path d="M5,3C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19H5V5H12V3H5M17.78,4C17.61,4 17.43,4.07 17.3,4.2L16.08,5.41L18.58,7.91L19.8,6.7C20.06,6.44 20.06,6 19.8,5.75L18.25,4.2C18.12,4.07 17.95,4 17.78,4M15.37,6.12L8,13.5V16H10.5L17.87,8.62L15.37,6.12Z" /></svg>
-                        </button>
-                        <button class="btn btn-secondary rounded-circle p-2 lh-1" type="button" id="next-quote-button" onclick="randomQuoter()">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><title>Next</title>
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                            </svg>
-                        </button>
-                </small>
-            </div>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-2">
+                        <p id="clock"></p>
+                        <p>48°F/9°C</p>
+                        <p>Cloudy</p>
+                    </div>
+                    <div class="col-md-7 pb-2 bg-body-secondary rounded">
+                        <div class="row row-cols text-end" style="height: 120px;">
+                            <blockquote class="blockquote">
+                                <p id="quoteText"></p>
+                                <footer class="blockquote-footer" id="quoteSource"></footer>
+                            </blockquote>
+                        </div>
+                        <div class="row align-items-end">
+                            <small class="d-block text-end mt-3">
+                                <button class="btn btn-secondary rounded-circle p-2 lh-1" type="button"
+                                    id="edit-quote-button" onclick="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <title>Edit Quote</title>
+                                        <path
+                                            d="M5,3C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19H5V5H12V3H5M17.78,4C17.61,4 17.43,4.07 17.3,4.2L16.08,5.41L18.58,7.91L19.8,6.7C20.06,6.44 20.06,6 19.8,5.75L18.25,4.2C18.12,4.07 17.95,4 17.78,4M15.37,6.12L8,13.5V16H10.5L17.87,8.62L15.37,6.12Z" />
+                                    </svg>
+                                </button>
+                                <button class="btn btn-secondary rounded-circle p-2 lh-1" type="button"
+                                    id="next-quote-button" onclick="randomQuoter()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <title>Next</title>
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg>
+                                </button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <p>To-Do Item One</p>
+                        <p>To-Do Item Two</p>
+                        <p>To-Do Item Three</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Save a Quick Note</label>
+                          </div>
+                    </div>
+                </div>
+            </main>
         </div>
-    </section>
-    <section>
-        
-    </section>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
-
-
